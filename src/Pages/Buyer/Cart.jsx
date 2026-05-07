@@ -111,10 +111,12 @@ const Cart = () => {
               </div>
             </div>
 
-            <button className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-black py-5 rounded-2xl mt-10 text-xs uppercase tracking-widest shadow-lg shadow-indigo-900/40 transition-all active:scale-95">
-              Secure Checkout
-            </button>
-            
+             <Link 
+  to="/checkout"
+  className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-black py-5 rounded-2xl mt-10 text-xs uppercase tracking-widest shadow-lg shadow-indigo-900/40 transition-all active:scale-95 block text-center"
+>
+  Secure Checkout
+</Link>
             <div className="mt-8 flex flex-col gap-3">
                <div className="flex items-center gap-3 text-slate-500">
                   <div className="w-2 h-2 rounded-full bg-green-500"></div>

@@ -11,6 +11,8 @@ import Inventory from './Components/Seller/Inventory';
 import AdminLayout from './Layouts/AdminLayout';
 import Shop from './Components/Buyer/Shop';
 import Cart from './Pages/Buyer/Cart';
+import Checkout from './Pages/Buyer/Checkout';
+import OrderSuccess from './Pages/Buyer/OrderSuccess';
 
 // src/main.jsx
 const router = createBrowserRouter([
@@ -32,7 +34,12 @@ const router = createBrowserRouter([
         path:"cart",
         element:<Cart/>
 
-      }
+      },{
+  path: "checkout",
+  element: <Checkout />,
+},{ path: "order-success",
+  element: <OrderSuccess/>,
+}
     ]
   },
   // // 2. ADMIN ROUTES
