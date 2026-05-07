@@ -10,6 +10,7 @@ import SellerLayout from './Layouts/SellerLayout';
 import Inventory from './Components/Seller/Inventory';
 import AdminLayout from './Layouts/AdminLayout';
 import Shop from './Components/Buyer/Shop';
+import Cart from './Pages/Buyer/Cart';
 
 // src/main.jsx
 const router = createBrowserRouter([
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
         children:[
          {index:true, element:<BuyerDashboard/>} 
         ]
+        
+      },{
+        path:"cart",
+        element:<Cart/>
+
       }
     ]
   },
